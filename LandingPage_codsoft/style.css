@@ -1,0 +1,110 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+:root{
+    --text: 1.5rem;
+    --head:calc(1rem + 5vw);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Hero-Section{
+    min-height: 100vh;
+    background: linear-gradient(black 0.001%,transparent), 
+    url("https://images.unsplash.com/photo-1541557435984-1c79685a082b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnVyZ2VyJTIwd2l0aCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color:black;
+    background-color: orange;
+    position: relative;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid transparent;
+    border-radius: 5%;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid white;
+    /* border-color: orange; */
+    /* background-color: white; */
+    
+}
+
+.hero-text{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-text a{
+    color: white;
+    font-size: var(--text);
+    background-color: orange;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem auto;
+    display: block;
+}
+
+.hero-text a:hover{
+    opacity: 0.6;
+}
+.hero-text h2{
+    font-size: var(--head);
+}
+
+.hero-text p{
+    font-size: 3rem;
+}
+
+footer{
+    color:black;
+    background-color: orange;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+footer i{
+    color:whitesmoke;
+    margin: 0 2.5rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    color: black;
+}
